@@ -1,11 +1,18 @@
 #textarea{
-   border: none;
-   width: 300px;
-   height: 100px;
-    border-radius: 20px;
-   
+    border-color: black;
+    width: 300px;
+    height: 100px;
+    border-radius: 10px;
 }
 
-body{
-    background-color: aqua;
+#char-count{
+    padding-top: 10px;
+}
+.wrapper.limit-reached #textarea {
+  border-color: #c84040;
+  color: #c84040;
+}
+
+.wrapper.limit-reached #char-count {
+  color: #c84040;
 }
