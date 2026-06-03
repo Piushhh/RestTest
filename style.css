@@ -1,69 +1,11 @@
-/* Basic page setup */
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  padding: 2rem;
-  background-color: #f9f9f9;
+#textarea{
+   border: none;
+   width: 300px;
+   height: 100px;
+    border-radius: 20px;
+   
 }
 
-/* Container sizing */
-.message-container {
-  max-width: 500px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.message-container h2 {
-  margin: 0;
-  font-size: 1.5rem;
-  font-weight: 500;
-  color: #000;
-}
-
-/* Wrapper to position the counter relative to the textarea */
-.textarea-wrapper {
-  position: relative;
-  width: 100%;
-}
-
-/* Textarea styling */
-textarea {
-  width: 100%;
-  box-sizing: border-box;
-  min-height: 140px;
-  padding: 20px 20px 45px 20px; /* Extra bottom padding prevents text from overlapping the counter */
-  border: 2px solid #000;
-  border-radius: 25px;
-  font-size: 16px;
-  font-family: inherit;
-  line-height: 1.5;
-  resize: none; /* Prevents user from breaking the layout */
-  outline: none;
-  transition: border-color 0.3s, color 0.3s;
-}
-
-textarea::placeholder {
-  color: #a0a0a0;
-}
-
-/* Character count styling */
-.char-count {
-  position: absolute;
-  bottom: 20px;
-  right: 25px;
-  font-size: 15px;
-  color: #000;
-  pointer-events: none; /* Prevents the counter from blocking clicks */
-}
-
-/* State Classes 
-  These trigger when the user hits the maximum limit 
-*/
-.textarea-wrapper.limit-reached textarea {
-  border-color: #c84040;
-  color: #c84040;
-}
-
-.textarea-wrapper.limit-reached .char-count {
-  color: #c84040;
+body{
+    background-color: aqua;
 }
