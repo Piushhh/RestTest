@@ -4,11 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RestTest</title>
+    <link rel="Stylesheet" >
 </head>
 <body>
-    <div>
-        <p>Write your message here</p>
-        <input> 
-    </div>
+    <div class="message-container">
+  <h2>Write your Message</h2>
+  <div class="textarea-wrapper" id="textareaWrapper">
+    <textarea 
+      id="messageInput" 
+      placeholder="Start typing ..." 
+      maxlength="250"
+    ></textarea>
+    <div class="char-count" id="charCount">0 / 250</div>
+  </div>
+</div>
 </body>
 </html>
